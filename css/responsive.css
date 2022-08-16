@@ -129,7 +129,8 @@ html body .top-header.header-2 .nav-link {
 	.feature-image, .single-image,	.single-image- {		margin: 30px 0 0	}
 	.pad-tb {
 		padding-top: 60px;
-		padding-bottom: 60px
+		padding-bottom: 60px;
+		background: #FFFFFF;
 	}
 	.form-block {
 		margin: 0 0 30px
