@@ -270,8 +270,11 @@ top: -5px;}
 .amenities-section {    background: #FFFFFF;}
 .amenities-card:hover{box-shadow: 0 0 10px #e6e3e3; top: -5px;}
 .amenities-card{
+	height: 250px;
 	text-align: center;
-	background: #fff5f5;	
+	/* background: #fff5f5;	 */
+	/* background-color: rgba(255, 215, 59, 0.9); */
+	background: linear-gradient(rgba(255, 216, 59, 0.541), rgba(22, 68, 6, 0.136)), linear-gradient(rgb(238, 232, 232), rgb(230, 223, 223));
 	border-radius: 6px;
 	padding: 20px;
 	margin: 5px 0;
@@ -445,7 +448,11 @@ border-radius: 6px;}
 .agent-section{background: #FFFFFF;}
 .agent-photo img{
 	width: 200px;
+	height: 177px;
 	border-radius: 6px;
+}
+.media-body{
+	height: 177px;
 }
 .social-links- a{
 	color: #154406;
