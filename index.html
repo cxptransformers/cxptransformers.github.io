@@ -233,19 +233,19 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="amenities-block owl-carousel mt45" data-slide="4" data-slide-res="2" data-autoplay="true" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="600">
-              <div class="amenities-card">
+              <div class="amenities-card" id="myBtn" onclick="modalOne()">
                 <div class="amenities-card-icon-section"><img src="images/icons/security-guard.png" alt="Security" class="img-fluid"></div>
                 <p>What are the housing options you support?</p>
               </div>
-              <div class="amenities-card">
+              <div class="amenities-card" id="myBtn2" onclick="modalTwo()">
                 <div class="amenities-card-icon-section"><img src="images/icons/cctv.png" alt="CCTV Camera" class="img-fluid"></div>
                 <p>What are some amenities I can get with my next rental property?</p>
               </div>
-              <div class="amenities-card">
+              <div class="amenities-card" id="myBtn3" onclick="modalThree()">
                 <div class="amenities-card-icon-section"><img src="images/icons/air-conditioner.png" alt="Air Conditioner" class="img-fluid"></div>
                 <p>Can you represent me if i am already in contact with several agents in the area?</p>
               </div>
-              <div class="amenities-card">
+              <div class="amenities-card" id="myBtn4" onclick="modalFour()">
                 <div class="amenities-card-icon-section"><img src="images/icons/save-water.png" alt="Rain water Harvesting" class="img-fluid"></div>
                 <p>Why Work with CXP realestate?</p>
               </div>
@@ -759,6 +759,87 @@
       </div>
     </footer>
     <!--End Footer--> 
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul class="list-features text-style">
+          <li>
+            <strong>Midway Houing</strong> - As you wait to pick your next home, or as you await your (packed house) container to arrive, we have the
+            best furnished and in some cases serviced appartments within your requirements and budget.
+          </li>
+          <li>
+            <strong>Furnished housing</strong> - If in need of serviced apartments and housing options for longterm lease, we can help. Collecting as
+            much if not ALL of your wishlist as possible.
+          </li>
+          <li>
+            <strong>Permanent housing</strong> - Once you are ready to settle down in the actual housing, we work with you to get the best deal in
+            the best areas, with as much of your wishlist as possible
+          </li>
+          <li>
+            <strong>Housing investments</strong> - If you have been in Nairobi for a while, you are sure to have heard and seen the surge in real
+            estate investment. With a bursting market of tenants, owning a house as a safe investment is always a good idea. Speak
+            with us to explore the options for expatriates wanting to acquire property in Nairobi or Mombasa.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul class="list-features text-style">
+          <li>
+            Modern, energy efficient homes with lots of compound from as low as 2,000 USD per month
+          </li>
+          <li>Proximity to international schools
+          </li>
+          <li>
+            Nearness to Malls, Hospitals, The UN, Embassies etc
+          </li>
+          <li>
+            Fitness and Wellness center access (Gyms, Pools, Gaming arcades , Saunas, Steam, Spas etc)
+          </li>
+          <li>
+            Pet friendly accommodation
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="myModal3" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul class="list-features text-style">
+          <li>
+            <strong>Yes</strong> - If you are already in talks with several agents, we work to represent your best interest in vetting the property
+            and leading your negotiations, to find you the perfect deal, with minimum stress.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="myModal4" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul class="list-features text-style">
+          <li>
+            We are responsive - Information and communication are vital strengths in these unprecedented times.
+          </li>
+          <li>
+            We have been successful running several projects across the international community, and now, we are taking our stellar
+            client experience and bringing it to your next home search
+          </li>
+          <li>
+            We are accountable to the community - For few years we have been known in the expat community, having friends, clients
+            and family that we care about and would love to add you to
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
@@ -770,5 +851,53 @@
     <script src="js/form.js"></script>   	
     <!--common script file-->
     <script src="js/main.js"></script>	
+    <script>
+      // Get the modal
+      var modal1 = document.getElementById("myModal1");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      var modal4 = document.getElementById("myModal4");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      var modalOne = function() {
+        modal1.style.display = "block";
+      }
+
+        var modalTwo = function () {
+          modal2.style.display = "block";
+        }    
+        
+        var modalThree = function () {
+          myModal3.style.display = "block";
+        }
+        
+        var modalFour = function () {
+          modal4.style.display = "block";
+        }        
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal1.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal1 | event.target ==  modal2 | event.target == modal3 | event.target == modal4) {
+          modal1.style.display = "none";
+          modal2.style.display = "none";
+          modal3.style.display = "none";
+          modal4.style.display = "none";
+        }
+      }        
+    </script>
   </body>
 </html>
