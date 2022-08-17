@@ -92,6 +92,9 @@ width: 90%;}
 	font-family: montserrat;
 	color: #FFD73B;
 }
+.enquire{
+
+}
 .white-text{
 	color:#154406;
 	font-family: montserrat;
@@ -153,8 +156,9 @@ width: 90%;}
 .hero-section {
 	position: relative;
     overflow: hidden;
-    background: url(../images/hero/hero-bg.png) linear-gradient(rgba(254, 254, 252, 0.797), rgba(121, 145, 42, 0.326)),
-		linear-gradient(white, white);;
+    /* background: url(../images/hero/hero-bg.png) linear-gradient(rgba(254, 254, 252, 0.797), rgba(121, 145, 42, 0.326)),
+		linear-gradient(white, white); */
+		background: #fff;
     padding-top: 170px;
     padding-bottom: 170px;
     background-repeat: no-repeat;
@@ -388,8 +392,8 @@ top: -5px;}
     font-family: "Merriweather";
 }
 .cta:hover{
-	background-color: #154406;
-	color: #fff;
+	background-color: #1e540d44;
+	color: #154406;
 	top: -5px;
 box-shadow: 0 5px 10px rgba(10, 34, 51, .2);}
 .cta {
@@ -401,7 +405,7 @@ box-shadow: 0 5px 10px rgba(10, 34, 51, .2);}
     text-align: center;
     outline: none;
     color: #fff;
-    background-color: #f85359;
+    background-color: #154406;
     border: none;
     border-radius: 6px;
     display: inline-block;
@@ -410,7 +414,7 @@ box-shadow: 0 5px 10px rgba(10, 34, 51, .2);}
     top: 0px;
     position: relative;
 }
-.cta:hover{color:#fff;}
+.cta:hover{color:#154406;}
 .mt20{margin-top:12px}
 .cta-text {align-self: center;}
 
@@ -665,7 +669,12 @@ background-color: #fff5f5;}
 	text-align: center;
     margin: 10px 0 0 0;}
 .form-block p.trm i{padding: 5px 5px 0 0;}
-.form-block button:hover{background-color: #154406;}
+.form-block button:hover{
+	background-color: #154406; 
+	background-color: #1e540d44;
+	top: -5px;
+	box-shadow: 0 5px 10px rgba(10, 34, 51, .2);
+}
 .form-block button {
 	font-size: 16px;
     font-weight: 400;
@@ -674,8 +683,8 @@ background-color: #fff5f5;}
     line-height: 60px;
     text-align: center;
     outline: none;
-    color: #fff;
-    background-color: #f85359;
+	color: #fff;
+	background-color: #154406;
     border: none;
     border-radius: 6px;
     width: 100%;
@@ -1238,13 +1247,14 @@ html body .top-header.header-2 .sticky .nav-link {
 
 /**button**/
 .button1{
-	color: #fff;
-    background-color: #f85359;
+	color: #154406;
+	background: linear-gradient(rgba(255, 216, 59, 0.677), rgba(22, 68, 6, 0.058)), linear-gradient(rgb(238, 232, 232), rgb(230, 223, 223));
 } 
 
 html body .button1:hover{
-	color: #154406;
-    background-color: #FFEBA1;
+	color: #151615d2;
+    background: linear-gradient(rgba(255, 216, 59, 0.677), rgba(22, 68, 6, 0.058)),
+		linear-gradient(rgb(238, 232, 232), rgb(230, 223, 223));;
 } 
 
 .button2{
