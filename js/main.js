@@ -81,6 +81,8 @@
 $("[data-background]").each(function () {
 	$(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
   })	
-  
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+	});
 
 })(jQuery);

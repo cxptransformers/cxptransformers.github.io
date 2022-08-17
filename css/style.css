@@ -1358,3 +1358,39 @@ html body .top-header.header-2 .navbutton {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/* MULTIPLE SELECT */
+.multiselect {
+	width: 324px;
+}
+
+.selectBox {
+	position: relative;
+}
+
+.selectBox select {
+	width: 100%;
+	font-weight: bold;
+}
+
+.overSelect {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#checkboxes {
+	display: none;
+	border: 1px #dadada solid;
+}
+
+#checkboxes label {
+	display: block;
+	color: #154406;
+}
+
+#checkboxes label:hover {
+	color: #164406b1;
+}
