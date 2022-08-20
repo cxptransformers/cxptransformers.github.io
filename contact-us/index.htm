@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>CXP - Real Estate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="wrapper img" style="background-image: url(images/img.jpg);">
+						<div class="row">
+							<div class="col-md-9 col-lg-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch with us</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Full Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="number">WhatsApp Number</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Enter WhatsApp Number" placeholder="Enter">
+													<div class="help-block with-errors"></div>
+												</div>
+												<div class="form-group">
+													<div class="multiselect">
+													<div class="selectBox" onclick="showCheckboxes()">
+														<label class="label" for="option">Select your preferences</label>
+														<select class="form-control">
+														<option>Select an option</option>
+														</select>
+														<div class="overSelect"></div>
+													</div>
+													<div id="checkboxes">
+														<label for="one">
+														<input type="checkbox" id="one" />House / Apartment / Gated community / Any</label>
+														<label for="two">
+														<input type="checkbox" id="two" />Furnished / Unfurnished/ any</label>
+														<label for="three">
+														<input type="checkbox" id="three" />Pool (Must have one / Would like one)</label>
+														<label for="three">
+														<input type="checkbox" id="four" />Gym</label>
+														<label for="three">
+														<input type="checkbox" id="five" />Terrace</label>
+														<label for="three">
+														<input type="checkbox" id="six" />Garden</label>
+														<label for="three">
+														<input type="checkbox" id="seven" />Parking</label>
+														<label for="three">
+														<input type="checkbox" id="eight" />Wooden flooring</label>
+														<label for="three">
+														<input type="checkbox" id="nine" />Tiled flooring</label>
+														<label for="three">
+														<input type="checkbox" id="nine" />Other (Please enter brief description below.)</label>
+													</div>
+													</div>
+													<!-- <select name="Dtype" id="Dtype" required multiple>
+														<option value="">Tick your Necessities below:</option>
+														<option value="web">web</option>
+														<option value="graphic">graphic</option>
+														<option value="video">video</option>
+													</select> -->
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>											
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#">Brief Description</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+  var expanded = false;
+
+  function showCheckboxes() {
+    var checkboxes = document.getElementById("checkboxes");
+    if (!expanded) {
+      checkboxes.style.display = "block";
+      expanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      expanded = false;
+    }
+  }      	
+  </script>
+
+	</body>
+</html>
+
