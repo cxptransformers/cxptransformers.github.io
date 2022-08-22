@@ -154,6 +154,95 @@
         background: none !important;
         padding: 0 !important;
       }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+
+
     </style>
     <link
       rel="stylesheet"
@@ -602,7 +691,7 @@
         margin-bottom: 18px;
       }
 
-      //contact us button
+      
 
       element.style {
       }
@@ -626,7 +715,7 @@
         padding-right: 41px;
       }
 
-      //back to top button
+      
 
       element.style {
       }
@@ -688,7 +777,8 @@
 
                   <div class="logo_wrapper">
                     <div class="q_logo">
-                      <a href="index.htm"><img
+                      <a href="index.htm"><img 
+                          width="700"
                           class="normal"
                           src="wp-content/uploads/bg/logo.png"
                           alt="Logo" /><img
@@ -734,6 +824,18 @@
                           class="plus"></span></a>
                     </li>
 
+                    <li
+                      id="nav-menu-item-58225"
+                      class="menu-item menu-item-type-post_type
+                      menu-item-object-page menu-item-home current-menu-item
+                      page_item page-item-16 current_page_item active narrow">
+                      <a href="index.htm" class="current"><span
+                          class="item_inner"><span class="menu_icon_wrapper"><i
+                              class="menu_icon blank fa"></i></span><span
+                            class="item_text">Gallery</span></span><span
+                          class="plus"></span></a>
+                    </li>                    
+
 
                     <li
                       id="nav-menu-item-58226"
@@ -758,127 +860,17 @@
                         class="mobile_arrow"><i class="fa fa-angle-right"></i><i
                           class="fa fa-angle-down"></i></span>
                     </li>
+
                     <li
                       id="mobile-menu-item-58225"
                       class="menu-item menu-item-type-post_type
-                      menu-item-object-page level0">
-                      <a href="about-us/index.htm" class=""><span>About Us</span></a><span
+                      menu-item-object-page menu-item-home current-menu-item
+                      page_item page-item-16 current_page_item active level0">
+                      <a href="index.htm" class="current"><span>Gallery</span></a><span
                         class="mobile_arrow"><i class="fa fa-angle-right"></i><i
                           class="fa fa-angle-down"></i></span>
-                    </li>
-                    <li
-                      id="mobile-menu-item-58242"
-                      class="menu-item menu-item-type-custom
-                      menu-item-object-custom menu-item-has-children has_sub
-                      level0">
-                      <a href="#" class=""><span>CXP REAL ESTATE Services</span></a><span
-                        class="mobile_arrow"><i class="fa fa-angle-right"></i><i
-                          class="fa fa-angle-down"></i></span>
-                      <ul class="sub_menu">
-                        <li
-                          id="mobile-menu-item-58266"
-                          class="menu-item menu-item-type-custom
-                          menu-item-object-custom menu-item-has-children has_sub
-                          level1">
-                          <a href="#" class=""><span>WA &#8211; Africana Digital</span></a><span
-                            class="mobile_arrow"><i class="fa fa-angle-right"></i><i
-                              class="fa fa-angle-down"></i></span>
-                          <ul class="sub_menu">
-                            <li
-                              id="mobile-menu-item-58244"
-                              class="menu-item menu-item-type-post_type
-                              menu-item-object-page level2">
-                              <a
-                                href="ppc-and-affiliate-marketing/index.htm"
-                                class=""><span>PPC and Affiliate marketing</span></a><span
-                                class="mobile_arrow"><i class="fa
-                                  fa-angle-right"></i><i class="fa
-                                  fa-angle-down"></i></span>
-                            </li>
-                            <li
-                              id="mobile-menu-item-58243"
-                              class="menu-item menu-item-type-post_type
-                              menu-item-object-page level2">
-                              <a
-                                href="lead-generation-email-marketing/index.htm"
-                                class=""><span>Lead generation – Email Marketing</span></a><span
-                                class="mobile_arrow"><i class="fa
-                                  fa-angle-right"></i><i class="fa
-                                  fa-angle-down"></i></span>
-                            </li>
-                            <li
-                              id="mobile-menu-item-58248"
-                              class="menu-item menu-item-type-post_type
-                              menu-item-object-page level2">
-                              <a
-                                href="lead-generation-social-media-marketing-and-or-management/index.htm"
-                                class=""><span>Lead generation – Social Media
-                                  marketing and
-                                  or Management</span></a><span
-                                class="mobile_arrow"><i class="fa
-                                  fa-angle-right"></i><i class="fa
-                                  fa-angle-down"></i></span>
-                            </li>
-                            <li
-                              id="mobile-menu-item-58254"
-                              class="menu-item menu-item-type-post_type
-                              menu-item-object-page level2">
-                              <a
-                                href="branding-website-development-and-upgrades/index.htm"
-                                class=""><span>Branding – Website Development
-                                  and
-                                  Upgrades</span></a><span class="mobile_arrow"><i
-                                  class="fa fa-angle-right"></i><i class="fa
-                                  fa-angle-down"></i></span>
-                            </li>
-                            <li
-                              id="mobile-menu-item-58265"
-                              class="menu-item menu-item-type-post_type
-                              menu-item-object-page level2">
-                              <a
-                                href="lead-generation-seo-search-engine-optimization/index.htm"
-                                class=""><span>Lead generation – SEO Search
-                                  Engine
-                                  Optimization</span></a><span
-                                class="mobile_arrow"><i class="fa
-                                  fa-angle-right"></i><i class="fa
-                                  fa-angle-down"></i></span>
-                            </li>
-                          </ul>
-                        </li>
-                        <li
-                          id="mobile-menu-item-58267"
-                          class="menu-item menu-item-type-custom
-                          menu-item-object-custom menu-item-has-children has_sub
-                          level1">
-                          <a href="#" class=""><span>WA &#8211; Africana
-                              Community Skilling</span></a><span
-                            class="mobile_arrow"><i class="fa fa-angle-right"></i><i
-                              class="fa fa-angle-down"></i></span>
-                          <ul class="sub_menu">
-                            <li
-                              id="mobile-menu-item-58272"
-                              class="menu-item menu-item-type-post_type
-                              menu-item-object-page level2">
-                              <a
-                                href="digital-women-digital-youth/index.htm"
-                                class=""><span>Digital women &#038; Digital
-                                  youth</span></a><span class="mobile_arrow"><i
-                                  class="fa fa-angle-right"></i><i class="fa
-                                  fa-angle-down"></i></span>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li
-                      id="mobile-menu-item-58228"
-                      class="menu-item menu-item-type-post_type
-                      menu-item-object-page level0">
-                      <a href="shortcodes/blog-posts/index.htm" class=""><span>Our
-                          Blog</span></a><span class="mobile_arrow"><i class="fa
-                          fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
-                    </li>
+                    </li>                    
+
                     <li
                       id="mobile-menu-item-58226"
                       class="menu-item menu-item-type-post_type
@@ -995,6 +987,7 @@
                         style="
                         background-image:
                         url(wp-content/uploads/bg/IMG_8735.jpg);
+                        opacity: 0.7;
                         ">
                         <img
                           src="wp-content/uploads/bg/IMG_8735.jpg"
@@ -1027,12 +1020,22 @@
                                     text-transform: capitalize;
                                     margin-bottom: 24px;
                                     ">
-                                    <span><h2 style="color: #154406">
-                                        CXP REAL ESTATE
-                                      </h2>
+                                    <span>
+                                      <h2>
+                                        <span style="color: #151615">
+                                          CXP
+                                        </span>
+                                        <span style="color: #ffffff">
+                                          REAL
+                                        </span>
+                                        <span style="color: #154406">
+                                          ESTATE
+                                        </span>    
+                                      </h2>                                                                        
                                       <h1 style="color: white">
                                         Moving to Nairobi?
-                                      </h1></span>
+                                      </h1>
+                                    </span>
                                   </h2>
                                 </div>
                               </div>
@@ -1050,7 +1053,7 @@
                                     letter-spacing: 0px;
                                     text-transform: none;
                                     ">
-                                    <span>An Individualised service for
+                                    <span>An Individualised realtor service for
                                       expatriates
                                       moving to Nairobi. Saving you time and
                                       delivering the perfect home search
@@ -2081,17 +2084,80 @@
                     </div>
                   </div>
                 </section>
+                
+
+
+
+             
                 <div
                   class="vc_row wpb_row section grid_section"
                   style="text-align: left">
 
                 </div>
-              </div>
+              </div>                
             </div>
+           
           </div>
           <!-- close div.content_inner -->
         </div>
         <!-- close div.content -->
+
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="wp-content/uploads/gallery/10.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Library</p>
+          <p class="opacity-low">Architect Design</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="wp-content/uploads/gallery/9.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Night Sky</p>
+          <p class="opacity-low">Cinematic</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="wp-content/uploads/gallery/8.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Tea Talk</p>
+          <p class="opacity-low">Composite</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="wp-content/uploads/gallery/4.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Road</p>
+          <p class="opacity-low">Landscape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="wp-content/uploads/gallery/5.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Sea</p>
+          <p class="opacity-low">Cityscape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="wp-content/uploads/gallery/6.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Vintage</p>
+          <p class="opacity-low">Cinematic</p>
+        </div>
+      </div> 
+    </div>
+  </div>      
 
         <footer>
           <div class="footer_inner clearfix">
@@ -2765,6 +2831,128 @@
       type="text/javascript"
       src="wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.0.3"
       id="vc_waypoints-js"></script>
+
+    <script type="text/javascript">
+      var gallery = document.querySelector('.gallery');
+      var galleryItems = document.querySelectorAll('.gallery-item');
+      var numOfItems = gallery.children.length;
+      var itemWidth = 23; // percent: as set in css
+
+      var featured = document.querySelector('.featured-item');
+
+      var leftBtn = document.querySelector('.move-btn.left');
+      var rightBtn = document.querySelector('.move-btn.right');
+      var leftInterval;
+      var rightInterval;
+
+      var scrollRate = 0.2;
+      var left;
+
+      function selectItem(e) {
+        if (e.target.classList.contains('active')) return;
+        
+        featured.style.backgroundImage = e.target.style.backgroundImage;
+        
+        for (var i = 0; i < galleryItems.length; i++) {
+          if (galleryItems[i].classList.contains('active'))
+            galleryItems[i].classList.remove('active');
+        }
+        
+        e.target.classList.add('active');
+      }
+
+      function galleryWrapLeft() {
+        var first = gallery.children[0];
+        gallery.removeChild(first);
+        gallery.style.left = -itemWidth + '%';
+        gallery.appendChild(first);
+        gallery.style.left = '0%';
+      }
+
+      function galleryWrapRight() {
+        var last = gallery.children[gallery.children.length - 1];
+        gallery.removeChild(last);
+        gallery.insertBefore(last, gallery.children[0]);
+        gallery.style.left = '-23%';
+      }
+
+      function moveLeft() {
+        left = left || 0;
+
+        leftInterval = setInterval(function() {
+          gallery.style.left = left + '%';
+
+          if (left > -itemWidth) {
+            left -= scrollRate;
+          } else {
+            left = 0;
+            galleryWrapLeft();
+          }
+        }, 1);
+      }
+
+      function moveRight() {
+        //Make sure there is element to the leftd
+        if (left > -itemWidth && left < 0) {
+          left = left  - itemWidth;
+          
+          var last = gallery.children[gallery.children.length - 1];
+          gallery.removeChild(last);
+          gallery.style.left = left + '%';
+          gallery.insertBefore(last, gallery.children[0]);	
+        }
+        
+        left = left || 0;
+
+        leftInterval = setInterval(function() {
+          gallery.style.left = left + '%';
+
+          if (left < 0) {
+            left += scrollRate;
+          } else {
+            left = -itemWidth;
+            galleryWrapRight();
+          }
+        }, 1);
+      }
+
+      function stopMovement() {
+        clearInterval(leftInterval);
+        clearInterval(rightInterval);
+      }
+
+      leftBtn.addEventListener('mouseenter', moveLeft);
+      leftBtn.addEventListener('mouseleave', stopMovement);
+      rightBtn.addEventListener('mouseenter', moveRight);
+      rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+      //Start this baby up
+      (function init() {
+        var images = [
+          'wp-content/uploads/gallery/1.jpg',
+          'wp-content/uploads/gallery/2.jpg',
+          'wp-content/uploads/gallery/3.jpg',
+          'wp-content/uploads/gallery/4.jpg',
+          'wp-content/uploads/gallery/5.jpg',
+          'wp-content/uploads/gallery/6.jpg',
+          'wp-content/uploads/gallery/7.jpg',
+          'wp-content/uploads/gallery/8.jpg',
+          'wp-content/uploads/gallery/9.jpg',
+          'wp-content/uploads/gallery/10.jpg',
+        ];
+        
+        //Set Initial Featured Image
+        featured.style.backgroundImage = 'url(' + images[0] + ')';
+        
+        //Set Images for Gallery and Add Event Listeners
+        for (var i = 0; i < galleryItems.length; i++) {
+          galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+          galleryItems[i].addEventListener('click', selectItem);
+        }
+      })();
+      
+    </script>  
 
 
   </body>
